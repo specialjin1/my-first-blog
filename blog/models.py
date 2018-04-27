@@ -6,9 +6,9 @@ class Post(models.Model) : # Object Declaration
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
-    created_data = models.DateTimeField(
+    created_date = models.DateTimeField(
             default=timezone.now)
-    published_data = models.DateTimeField(
+    published_date = models.DateTimeField(
             blank=True, null=True)
 
     def publish(self):
