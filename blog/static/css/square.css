@@ -1,0 +1,22 @@
+.square {
+	border: 5px solid red;
+	text-align: center;
+	float: right;
+	position: relative;
+	width: 30vw;
+	height: 30vw;
+}
+
+.square:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.content {
+	font-size: 2em;
+	padding-top: 20%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
