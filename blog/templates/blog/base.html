@@ -16,8 +16,7 @@
 		{% else %}
 			<a class="top-menu" href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span></a>
 		{% endif %}
-			<a class="top-menu" href="{% url 'post_list' %}"><span class="glyphicon glyphicon-home"></span></a>
-			<h1><a href="">Django Girls Blog</a></h1>
+			<h1><a href="{% url 'post_list' %}">Django Girls Blog</a></h1>
 		</div>
 
 		<div class="content container">
